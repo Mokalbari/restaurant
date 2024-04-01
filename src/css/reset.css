@@ -95,6 +95,10 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+li {
+  list-style: none;
+}
+
 /* ************** */
 /* END OF CSS RESET */
 /* ************** */
