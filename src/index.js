@@ -1,1 +1,1 @@
-console.log("Yes");
+import reset from "./css/reset.css";
