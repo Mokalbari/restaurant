@@ -19,5 +19,8 @@ document.addEventListener("click", (event) => {
   } else if (event.target.id === "home") {
     divContent.innerHTML = "";
     appendHomePage();
+  } else if (event.target.id === "menu-btn") {
+    divContent.innerHTML = "";
+    appendMenuPage();
   }
 });

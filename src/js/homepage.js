@@ -3,7 +3,7 @@ import { divContent } from "./dom";
 
 export const appendHomePage = () => {
   const flexContainer = dom.div;
-  flexContainer.classList.add("home", "flex-container");
+  flexContainer.classList.add("home");
   divContent.appendChild(flexContainer);
 
   const leftContainer = dom.div;
@@ -24,6 +24,7 @@ export const appendHomePage = () => {
   leftContainer.appendChild(heroContent);
 
   const button = dom.button;
+  button.setAttribute("id", "menu-btn");
   button.textContent = "See menu";
   leftContainer.appendChild(button);
 

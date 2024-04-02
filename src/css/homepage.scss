@@ -1,7 +1,7 @@
 @use "variables" as *;
 @use "global";
 
-.home.flex-container {
+.home {
   display: flex;
   justify-content: center;
   gap: $s3;
