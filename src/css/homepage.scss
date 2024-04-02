@@ -11,7 +11,7 @@
     flex-flow: column wrap;
 
     h1 {
-      font-size: $s5;
+      font-size: $s5; // Ensure $s5 is defined
       background: rgb(1, 17, 38);
       background: linear-gradient(
         230deg,
@@ -21,10 +21,11 @@
         rgba(1, 28, 64, 1) 94%
       );
       -webkit-background-clip: text;
+      background-clip: text; // Added standard property
       -webkit-text-fill-color: transparent;
-
       margin-bottom: $s2;
     }
+
     p {
       font-size: $s150;
       width: 40ch;
