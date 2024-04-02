@@ -1,0 +1,58 @@
+@use "variables" as *;
+@use "global";
+
+.home.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: $s3;
+
+  .left-container {
+    display: flex;
+    flex-flow: column wrap;
+
+    h1 {
+      font-size: $s5;
+      background: rgb(1, 17, 38);
+      background: linear-gradient(
+        230deg,
+        rgba(1, 17, 38, 1) 32%,
+        rgba(20, 108, 148, 1) 51%,
+        rgba(25, 167, 206, 1) 77%,
+        rgba(1, 28, 64, 1) 94%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      margin-bottom: $s2;
+    }
+    p {
+      font-size: $s150;
+      width: 40ch;
+      margin-bottom: $s2 * 2;
+    }
+
+    button {
+      align-self: center;
+      padding: $s075 $s100;
+      border: none;
+      border-radius: $s2;
+      font-family: $ff-b;
+      font-weight: $fw-bold;
+      background-color: $clr-main-800;
+      color: $clr-main-200;
+
+      &:hover {
+        @include global.hover-effect();
+      }
+    }
+  }
+  .right-container {
+    background: url(../img/dd14e7d0-988d-4883-a1c2-cb93b93b81fb.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -5px;
+    height: 95svh;
+    width: 40svw;
+    border-radius: $s2;
+  }
+}

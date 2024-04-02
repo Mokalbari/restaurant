@@ -4,6 +4,7 @@
 header {
   display: flex;
   margin: 0 $s5;
+  margin-bottom: $s5;
   padding: $s100;
 
   #title {
@@ -23,6 +24,17 @@ header {
     gap: $s2;
 
     li:hover {
+      @include global.hover-effect();
+    }
+  }
+}
+
+footer {
+  padding: $s100;
+  @include global.flex-center();
+  p {
+    color: $clr-neutral-400;
+    a {
       @include global.hover-effect();
     }
   }
