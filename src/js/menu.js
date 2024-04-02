@@ -51,17 +51,18 @@ export const appendMenuPage = () => {
   cardContainer2.appendChild(textDiv2);
 
   const subTitle2 = dom.h3;
-  subTitle2.textContent = "Seared Scallops with Citrus Herb Butter";
+  subTitle2.textContent = "Herb-Crusted Rack of Lamb with Rosemary Jus";
   textDiv2.appendChild(subTitle2);
 
   const text2 = dom.p;
-  text2.textContent = `Succulent scallops, perfectly seared to golden perfection and
-  dressed with a zesty citrus herb butter sauce. Accompanied by a
-  refreshing citrus salad garnished with microgreens.`;
+  text2.textContent = `Tender rack of lamb coated in a fragrant herb crust, roasted to
+  perfection and served with a rich rosemary jus. Accompanied by roasted
+  baby potatoes and seasonal vegetables.
+`;
   textDiv2.appendChild(text2);
 
   const price2 = dom.p;
-  price2.textContent = "65€";
+  price2.textContent = "70€";
   textDiv2.appendChild(price2);
   //
   //
@@ -79,16 +80,16 @@ export const appendMenuPage = () => {
   cardContainer3.appendChild(textDiv3);
 
   const subTitle3 = dom.h3;
-  subTitle3.textContent = "Seared Scallops with Citrus Herb Butter";
+  subTitle3.textContent = "Truffle Risotto with Wild Mushrooms";
   textDiv3.appendChild(subTitle3);
 
   const text3 = dom.p;
-  text3.textContent = `Succulent scallops, perfectly seared to golden perfection and
-    dressed with a zesty citrus herb butter sauce. Accompanied by a
-    refreshing citrus salad garnished with microgreens.`;
+  text3.textContent = `Creamy Arborio rice cooked to perfection with earthy truffle oil, topped
+  with a medley of sautéed wild mushrooms and finished with a sprinkle of
+  Parmesan cheese.`;
   textDiv3.appendChild(text3);
 
   const price3 = dom.p;
-  price3.textContent = "65€";
+  price3.textContent = "60€";
   textDiv3.appendChild(price3);
 };
