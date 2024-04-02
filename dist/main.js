@@ -206,7 +206,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/reset.css */ \"./src/css/reset.css\");\n/* harmony import */ var _css_variables_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/variables.scss */ \"./src/css/variables.scss\");\n/* harmony import */ var _css_header_footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/header-footer.scss */ \"./src/css/header-footer.scss\");\n/* harmony import */ var _css_global_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/global.scss */ \"./src/css/global.scss\");\n/* harmony import */ var _css_homepage_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/homepage.scss */ \"./src/css/homepage.scss\");\n\n\n\n\n\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/reset.css */ \"./src/css/reset.css\");\n/* harmony import */ var _css_variables_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/variables.scss */ \"./src/css/variables.scss\");\n/* harmony import */ var _css_header_footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/header-footer.scss */ \"./src/css/header-footer.scss\");\n/* harmony import */ var _css_global_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/global.scss */ \"./src/css/global.scss\");\n/* harmony import */ var _css_homepage_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/homepage.scss */ \"./src/css/homepage.scss\");\n/* harmony import */ var _js_homepage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/homepage */ \"./src/js/homepage.js\");\n\n\n\n\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  appendHomePage();\n});\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/dom.js":
+/*!***********************!*\
+  !*** ./src/js/dom.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   divContent: () => (/* binding */ divContent),\n/* harmony export */   getDomElement: () => (/* binding */ getDomElement)\n/* harmony export */ });\nconst getDomElement = {\n  get div() {\n    return document.createElement(\"div\");\n  },\n\n  get h1() {\n    return document.createElement(\"h1\");\n  },\n\n  get h2() {\n    return document.createElement(\"h2\");\n  },\n\n  get p() {\n    return document.createElement(\"p\");\n  },\n\n  get button() {\n    return document.createElement(\"button\");\n  },\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getDomElement);\nconst divContent = document.querySelector(\"#content\");\n\n\n//# sourceURL=webpack://restaurant/./src/js/dom.js?");
+
+/***/ }),
+
+/***/ "./src/js/homepage.js":
+/*!****************************!*\
+  !*** ./src/js/homepage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/js/dom.js\");\n\n\n\nconst appendHomePage = () => {\n  const flexContainer = _dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div;\n  flexContainer.classList.add(\"home\", \"flex-container\");\n  _dom__WEBPACK_IMPORTED_MODULE_0__.divContent.appendChild(flexContainer);\n\n  const leftContainer = _dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div;\n  leftContainer.classList.add(\"left-container\");\n  flexContainer.appendChild(leftContainer);\n\n  const heading = _dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"].h1;\n  heading.textContent = \"Tannins!\";\n  leftContainer.appendChild(heading);\n\n  const heroContent = _dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"].p;\n  heroContent.textContent = `At Tannins, we redefine the art of dining, merging the\n  sophistication of high-end cuisine with the delicate nuances of\n  wine and tea pairings. Embark on a culinary journey where every\n  dish is meticulously crafted to tantalize your taste buds and\n  elevate your dining experience to new heights.\n`;\n  leftContainer.appendChild(heroContent);\n\n  const button = _dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"].button;\n  button.textContent = \"See menu\";\n  leftContainer.appendChild(button);\n\n  const rightContainer = _dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div;\n  rightContainer.classList.add(\"right-container\");\n  flexContainer.appendChild(rightContainer);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (appendHomePage());\n\n\n//# sourceURL=webpack://restaurant/./src/js/homepage.js?");
 
 /***/ }),
 
