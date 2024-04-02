@@ -1,0 +1,57 @@
+@use "variables" as *;
+@use "global";
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: $s2;
+  margin-bottom: $s5;
+
+  h2 {
+    margin-bottom: $s2;
+    font-family: $ff-b;
+    font-size: $s2;
+  }
+
+  .card-container {
+    display: flex;
+    gap: $s2;
+
+    .img {
+      width: $s10 * 1.5;
+      height: $s10 * 1.5;
+      border-radius: $s2;
+    }
+
+    #scallops {
+      background: url(../img/scallops.webp);
+      background-size: cover;
+    }
+
+    #lamb {
+      background: url(../img/lamb.webp);
+      background-size: cover;
+    }
+
+    #risotto {
+      background: url(../img/risotto.webp);
+      background-size: cover;
+    }
+
+    .text-container {
+      display: flex;
+      flex-flow: column wrap;
+      width: 40ch;
+
+      h3 {
+        font-size: $s2;
+        margin-bottom: $s100;
+      }
+
+      p {
+        margin-bottom: $s150;
+      }
+    }
+  }
+}

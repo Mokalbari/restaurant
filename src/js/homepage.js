@@ -32,4 +32,4 @@ const appendHomePage = () => {
   flexContainer.appendChild(rightContainer);
 };
 
-export default appendHomePage();
+// export default appendHomePage();
