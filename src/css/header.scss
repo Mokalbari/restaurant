@@ -1,17 +1,29 @@
 @use "variables" as *;
+@use "global";
+
 header {
   display: flex;
+  margin: 0 $s5;
+  padding: $s100;
 
   #title {
     font-family: $ff-h;
+    font-size: $fw-semi;
+    font-size: $s2;
   }
 
   menu {
     margin-left: auto;
+    @include global.flex-center();
   }
 
   ul {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: $s2;
+
+    li:hover {
+      @include global.hover-effect();
+    }
   }
 }

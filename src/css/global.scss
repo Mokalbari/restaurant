@@ -1,0 +1,27 @@
+@use "variables" as *;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-h;
+}
+
+body {
+  font-family: $ff-b;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hover-effect {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 150ms ease-in-out;
+  border-bottom: 1px solid $clr-neutral-200;
+  transition: 150ms;
+}

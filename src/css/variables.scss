@@ -3,10 +3,10 @@ $ff-h: "Dancing Script", cursive;
 $ff-b: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$fs-thin: 300;
-$fs-regular: 400;
-$fs-semi: 500;
-$fs-bold: 700;
+$fw-thin: 300;
+$fw-regular: 400;
+$fw-semi: 500;
+$fw-bold: 700;
 
 // Spaces
 $s025: 0.25rem;
@@ -22,3 +22,15 @@ $s2: 2rem;
 $s3: 3rem;
 $s5: 5rem;
 $s10: 10rem;
+
+// Colors
+$clr-main-800: #146c94;
+$clr-main-600: #19a7ce;
+$clr-main-400: #afd3e2;
+$clr-main-200: #f6f1f1;
+
+$clr-neutral-800: #1f2937;
+$clr-neutral-600: #4b5563;
+$clr-neutral-400: #9ca3af;
+$clr-neutral-200: #e4e4e7;
+$clr-neutral-050: #f9fafb;
