@@ -1,7 +1,7 @@
 import dom from "./dom";
 import { divContent } from "./dom";
 
-const appendHomePage = () => {
+export const appendHomePage = () => {
   const flexContainer = dom.div;
   flexContainer.classList.add("home", "flex-container");
   divContent.appendChild(flexContainer);
@@ -31,5 +31,3 @@ const appendHomePage = () => {
   rightContainer.classList.add("right-container");
   flexContainer.appendChild(rightContainer);
 };
-
-// export default appendHomePage();
